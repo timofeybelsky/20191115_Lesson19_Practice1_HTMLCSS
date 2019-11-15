@@ -1,5 +1,7 @@
 body{
     background-image: url('../img/beach-wall.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mainContainer{
@@ -85,6 +87,8 @@ input + input{
 
     box-sizing: border-box;
     padding: 10px;
+
+    max-width: 100%;
 }
 
 /*
