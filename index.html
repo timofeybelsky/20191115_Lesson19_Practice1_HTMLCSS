@@ -8,16 +8,25 @@
 </head>
 <body>
     <div class="mainContainer mainContainerStyle">
-        <span><h1>Contact form</h1></span>
+        <h1>Contact form</h1>
         <span>Please fill in your information and we'll be sending your order.</span>
         <form action="#" method="post">
             <div><span class="lables">Your name</span><span class="inputs"><input id="inputFirstName" type="text" name="userFirstName" placeholder="First Name" required><input id="inputLastName" type="text" name="userLastName" placeholder="Last Name"></span></div>
             <div><span class="lables">Your email </span><span class="inputs"><input id="inputEmail" type="text" name="userEmail" placeholder="your@email.com"></span></div>
             <div><span class="lables">Phone * </span><span class="inputs"><input id="inputPhoneOne" type="text" name="userPhoneOne" placeholder="000" required><input id="inputPhoneTwo" type="text" name="userPhoneTwo" placeholder="000" required><input id="inputPhoneThree" type="text" name="userPhoneThree" placeholder="0000" required></span></div>
-            <div><span class="lables">Message subject * </span><span class="inputs"><input id="inputMessageSubject" type="text" name="userMessageSubject" placeholder="Other" required></span></div>
+            <div>
+                <span class="lables">Message subject * </span>
+                <span class="inputs">
+                    <!-- <input id="inputMessageSubject" type="text" name="userMessageSubject" placeholder="Other" required> -->
+                    <select name="userMessageSubject[]" id="inputMessageSubject">
+                        <option selected value="other">Other</option>
+                        <option value="notOther">Not Other</option>
+                    </select>
+                </span>
+            </div>
             <div><span class="lables">Message * </span><span class="inputs"><textarea id="inputMessage" name="userMessage"></textarea></span></div>
             <hr>
-            <div><input type="submit" id="submitForm" value="SUBMIT FORM"></div>
+            <div><span class="lables"></span><span class="inputs"><input type="submit" id="submitForm" value="SUBMIT FORM"></span></div>
         </form>
 
     </div>

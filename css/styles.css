@@ -1,5 +1,5 @@
 body{
-    background-color: #D47677;
+    background-image: url('../img/beach-wall.jpg');
 }
 
 .mainContainer{
@@ -21,8 +21,9 @@ body{
 }
 
 .mainContainerStyle{
-    border: 1px solid black;
-    background-color: #047670;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+    /*border: 1px solid black;
+    background-color: rgba(0,0,0, 0)*/
     color: white;
 }
 
@@ -78,7 +79,7 @@ input + input{
     flex-direction: row;
 }
 
-.inputs > input{
+.inputs > *{
     flex-basis: auto;
     flex-grow: 1;
 
@@ -86,20 +87,45 @@ input + input{
     padding: 10px;
 }
 
+/*
 .inputs > textarea{
     flex-basis: auto;
     flex-grow: 1;
 }
-
+*/
 
 .lables{
     /*flex-basis: 150px;*/
     min-width: 150px;
+    font-size: 18px;
 }
 
-.mainContainer > span{
+.mainContainer > span, h1{
     flex-basis: auto;
     flex-grow: 1;
 
     width: 100%;
+
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.mainContainer > span{
+    margin-bottom: 50px;
+}
+
+.mainContainer > h1{
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#submitForm{
+    background-color: rgba(0,0,0, 0);
+    color: white;
+    font-weight: bold;
+}
+
+#inputMessageSubject{
+    background-color: white;
 }
